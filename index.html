@@ -28,7 +28,7 @@
       "name": "مؤسسة العصيمي نجارة وتفصيل خزائن حديثة",
       "image": "https://imgg.io/images/2026/03/27/1db2264454d07fb8b88cf9878f52f085.jpg",
       "telephone": "+966577643182",
-      "email": "marzouqalnajar@gmail.com",
+      "email": "monersherry7@gmail.com",
       "description": "مؤسسة العصيمي لأرقى أعمال النجارة وتفصيل الخزائن الحديثة بالرياض. متخصصون في تفصيل غرف النوم، الخزائن المبتكرة، والديكورات الجدارية.",
       "address": {
         "@type": "PostalAddress",
@@ -355,40 +355,6 @@
         body.light-mode .hours-list li { border-bottom: 1px dashed rgba(0, 0, 0, 0.2); }
         .hours-list li:last-child { border-bottom: none; }
         .hours-list .day { font-weight: bold; }
-        
-        /* ================= معرض الصور (Gallery Slider) ================= */
-        .gallery-container {
-            position: relative; max-width: 900px; aspect-ratio: 16/9; 
-            max-height: 550px; min-height: 300px; margin: 0 auto;
-            border-radius: 15px; padding: 8px; 
-            border: 3px solid var(--gold-primary); 
-            background-color: var(--surface-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2), inset 0 0 15px rgba(0,0,0,0.5);
-            overflow: hidden; transition: background-color 0.4s ease, border-color 0.4s ease;
-        }
-        
-        .gallery-inner { position: relative; width: 100%; height: 100%; border-radius: 10px; overflow: hidden; }
-        .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; z-index: 1; }
-        .slide.active { opacity: 1; z-index: 2; }
-        .slide img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-        
-        .slider-arrow {
-            position: absolute; top: 50%; transform: translateY(-50%);
-            background: rgba(26, 26, 29, 0.6); backdrop-filter: blur(5px);
-            color: var(--gold-light); border: 1px solid var(--gold-primary);
-            width: 45px; height: 45px; border-radius: 50%; cursor: pointer;
-            font-size: 1.2rem; transition: 0.3s; display: flex; justify-content: center; align-items: center; z-index: 10;
-        }
-        .slider-arrow:hover { background: var(--gold-primary); color: var(--bg-color); transform: translateY(-50%) scale(1.1); box-shadow: 0 0 15px rgba(197, 160, 89, 0.4); }
-        .prev-arrow { right: 15px; } .next-arrow { left: 15px; }
-
-        .slider-dots {
-            position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%);
-            display: flex; gap: 10px; z-index: 10; background: rgba(0,0,0,0.4);
-            padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);
-        }
-        .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); cursor: pointer; transition: 0.3s; }
-        .dot.active { background: var(--gold-primary); transform: scale(1.3); box-shadow: 0 0 5px rgba(197, 160, 89, 0.8); }
 
         /* ================= تواصل معنا والخريطة ونموذج الاتصال ================= */
         .contact-info { text-align: center; margin-bottom: 20px; padding: 0 10px; }
@@ -534,7 +500,6 @@
             .about-text { padding: 25px 15px; font-size: 1rem; line-height: 1.7; }
             .grid-container { grid-template-columns: 1fr; gap: 20px; }
             .service-card { padding: 25px 15px; }
-            .gallery-container { aspect-ratio: 4/3; }
             .map-container { height: 350px; margin-bottom: 30px; }
             .contact-form-container { padding: 25px 15px; }
             .bottom-nav { width: 98%; bottom: 10px; }
@@ -584,7 +549,6 @@
         <a href="#about" onclick="toggleMenu()"><span class="ar">من نحن</span><span class="en">About Us</span></a>
         <a href="#services" onclick="toggleMenu()"><span class="ar">خدماتنا</span><span class="en">Services</span></a>
         <a href="#working-hours" onclick="toggleMenu()"><span class="ar">مواعيد العمل</span><span class="en">Working Hours</span></a>
-        <a href="#gallery" onclick="toggleMenu()"><span class="ar">معرض الصور</span><span class="en">Gallery</span></a>
         <a href="#contact" onclick="toggleMenu()"><span class="ar">تواصل معنا</span><span class="en">Contact</span></a>
     </div>
 
@@ -676,39 +640,12 @@
         </div>
     </section>
 
-    <section id="gallery" class="section-alt">
-        <h2 class="section-title reveal"><span class="ar">معرض أعمالنا</span><span class="en">Our Gallery</span></h2>
-        
-        <div class="gallery-container reveal" id="galleryContainer">
-            <div class="gallery-inner">
-                <div class="slide active"><img src="https://imgg.io/images/2026/03/22/508ae7f7a0d523ce93b7b9a402c29b90.jpg" alt="تفصيل خزائن خشبية الرياض"></div>
-                <div class="slide"><img src="https://imgg.io/images/2026/03/23/d65b3d57f52dba61bcbb87ab671328ed.jpg" alt="ديكورات خشبية فخمة بالرياض"></div>
-                <div class="slide"><img src="https://imgg.io/images/2026/03/23/c381f10049390ee0f70527dcd8e38171.jpg" alt="غرف نوم وتفصيل نجارة"></div>
-                <div class="slide"><img src="https://imgg.io/images/2026/03/23/bff7ad55d195948926ddccafd083b7ff.jpg" alt="ديكورات شاشات خشبية الرياض"></div>
-                <div class="slide"><img src="https://imgg.io/images/2026/03/23/9ff72a755a1f50a974dd43ac51ed8598.jpg" alt="تفصيل دواليب مبتكرة"></div>
-                <div class="slide"><img src="https://imgg.io/images/2026/03/23/3625a4cb58109188cd5eb0f0b12b7401.jpg" alt="تصميم غرف نوم راقية"></div>
-                
-                <button class="slider-arrow prev-arrow" onclick="moveSlide(-1)" aria-label="Previous"><i class="fas fa-chevron-right"></i></button>
-                <button class="slider-arrow next-arrow" onclick="moveSlide(1)" aria-label="Next"><i class="fas fa-chevron-left"></i></button>
-                
-                <div class="slider-dots">
-                    <span class="dot active" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="section-alt">
         <h2 class="section-title reveal"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></h2>
         
         <div class="contact-info reveal">
             <p><i class="fas fa-phone"></i> <span class="ar">رقم التواصل: </span><span class="en">Phone: </span><a href="tel:0577643182" style="color:inherit; text-decoration:none; direction:ltr; display:inline-block;">0577643182</a></p>
-            <p><i class="fas fa-envelope"></i> <span class="ar">البريد الإلكتروني: </span><span class="en">Email: </span><a href="mailto:marzouqalnajar@gmail.com" style="color:inherit; text-decoration:none;">marzouqalnajar@gmail.com</a></p>
+            <p><i class="fas fa-envelope"></i> <span class="ar">البريد الإلكتروني: </span><span class="en">Email: </span><a href="mailto:monersherry7@gmail.com" style="color:inherit; text-decoration:none;">monersherry7@gmail.com</a></p>
         </div>
         
         <div class="address-text reveal">
@@ -736,7 +673,7 @@
 
         <div class="contact-form-container reveal">
             <h3><span class="ar">أرسل لنا تفاصيل طلبك</span><span class="en">Send Us Your Request</span></h3>
-            <form action="mailto:marzouqalnajar@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+            <form action="mailto:monersherry7@gmail.com" method="POST" enctype="text/plain" class="contact-form">
                 <div class="form-row">
                     <input type="text" name="Name" placeholder="الاسم / Name" required>
                     <input type="tel" name="Phone" placeholder="رقم الجوال / Phone Number" required>
@@ -773,10 +710,6 @@
         <a href="#working-hours">
             <i class="fas fa-clock"></i>
             <span class="nav-text"><span class="ar">أوقاتنا</span><span class="en">Hours</span></span>
-        </a>
-        <a href="#gallery">
-            <i class="fas fa-images"></i>
-            <span class="nav-text"><span class="ar">المعرض</span><span class="en">Gallery</span></span>
         </a>
         <a href="#contact">
             <i class="fas fa-envelope"></i>
@@ -914,56 +847,6 @@
         // تشغيل التحقق فوراً ثم كل دقيقة
         checkBusinessStatus();
         setInterval(checkBusinessStatus, 60000);
-
-        // ================= كود معرض الصور (Gallery Slider) =================
-        let slideIndex = 0;
-        const slides = document.querySelectorAll(".slide");
-        const dots = document.querySelectorAll(".dot");
-        let sliderInterval;
-
-        function showSlides(n) {
-            if (n >= slides.length) slideIndex = 0;
-            if (n < 0) slideIndex = slides.length - 1;
-            
-            slides.forEach(slide => slide.classList.remove("active"));
-            dots.forEach(dot => dot.classList.remove("active"));
-            
-            slides[slideIndex].classList.add("active");
-            dots[slideIndex].classList.add("active");
-        }
-
-        function moveSlide(n) {
-            slideIndex += n;
-            showSlides(slideIndex);
-        }
-
-        function currentSlide(n) {
-            slideIndex = n;
-            showSlides(slideIndex);
-        }
-
-        function autoSlide() {
-            slideIndex++;
-            showSlides(slideIndex);
-        }
-
-        function startSlider() {
-            clearInterval(sliderInterval);
-            sliderInterval = setInterval(autoSlide, 3000);
-        }
-
-        function stopSlider() {
-            clearInterval(sliderInterval);
-        }
-
-        const galleryContainer = document.getElementById('galleryContainer');
-        if(galleryContainer){
-            startSlider();
-            galleryContainer.addEventListener('mouseenter', stopSlider);
-            galleryContainer.addEventListener('mouseleave', startSlider);
-            galleryContainer.addEventListener('touchstart', stopSlider, {passive: true});
-            galleryContainer.addEventListener('touchend', startSlider, {passive: true});
-        }
 
         // كود الأنيميشن عند السكرول
         function revealOnScroll() {
